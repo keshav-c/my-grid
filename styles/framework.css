@@ -52,6 +52,22 @@ table {
   border-spacing: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: calc(7 / 6);
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+p, span, a {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-family: serif;
+}
+
 .container {
   float: left;
   margin-left: 15px;
