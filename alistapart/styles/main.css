@@ -1,0 +1,172 @@
+
+.container {
+    width: 960px;
+}
+
+a:hover {
+    text-decoration: line-through;
+}
+
+.nav {
+    background:rgba(255, 255, 255, .7);
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav a {
+    color: black;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;    
+}
+
+.nav li {
+    margin: 0 12px;
+}
+
+.nav li:last-of-type {
+    float: right;
+}
+
+.nav img {
+    height:30px;
+}
+
+.nav form {
+    display: inline;
+}
+
+.img-div img{
+    max-width: 100%;
+}
+
+.date {
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.date span:first-child {
+    background: maroon;
+    color: white;
+}
+ 
+.article-title a {
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.article-title a:hover,
+.byline a:hover {
+    text-decoration: line-through;
+}
+
+.article-title,
+.byline {
+    text-align: center;
+}
+
+.byline {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.byline a {
+    text-decoration: none;
+}
+
+
+.more > h2 {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.more-art-title a {
+    color: black;
+    font-size: 1.125rem;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.more-art-title a:hover {
+    text-decoration: line-through;
+}
+
+.more .byline,
+.more .byline a,
+.more-text, .more-art-foot,
+.more-art-foot span {
+    font-size: .875rem;
+    line-height: calc(4/3);
+    text-align: left;    
+}
+
+.more-art-foot {
+    color: gray;
+}
+
+.more .byline,
+.more-art-title {
+    margin-bottom: 4px;
+}
+
+.more-footer {
+    background: lightgray;
+    border-radius: 5px;
+    margin: 40px 0;
+    padding: 15px 8px;
+    text-align: center;
+}
+
+.more-footer p {
+    font-size: .875rem;
+}
+
+ul, li {
+    display: inline;
+}
+
+.footer {
+    background: lightgray;
+    padding: 0 220px;
+}
+
+.footer-nav li a,
+.footer-nav-left li a {
+    color: black;
+    font-size: .875rem;
+    font-weight: 700;
+    margin: 0 7px;
+    text-decoration: none;
+}
+
+.footer-nav ul:last-of-type {
+    float: right;
+}
+
+.footer-widget {
+    margin-bottom: 40px;
+}
+
+.footer-widget img {
+    float: left;
+    margin-right: 6px;
+}
+
+.footer-widget p,
+.footer-widget a,
+.issn p,
+.issn a {
+    font-size: .875rem;
+    line-height: 1;
+}
+
+.footer-widget .col-5:last-of-type {
+    float: right;
+}
