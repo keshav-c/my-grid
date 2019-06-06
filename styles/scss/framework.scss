@@ -1,0 +1,67 @@
+
+@import 'reset';
+
+// column gutter width
+$cgw: 30px;
+// row gutter width
+$rgw: 30px;
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: calc(7 / 6);
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+p, span, a {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-family: serif;
+}
+
+@mixin clearfix {
+    &::before,
+    &::after {
+        content: " ";
+        display: table;
+    }
+    &::after {
+        clear: both;
+    }
+    & {
+        zoom: 1;
+    }
+}
+
+@mixin grid-unit($n) {
+    float: left;
+    margin-left: $cgw / 2;
+    margin-right: $cgw / 2;
+    width: calc((((100% - (12 * #{$cgw}))/12) * #{$n}) + (#{$cgw} * (#{$n} - 1)));
+}
+
+.container {
+    @include clearfix;
+    @include grid-unit(12);
+    float: none;
+    margin: 0 auto;
+}
+
+.row {
+    &::before,
+    &::after {
+        content: " ";
+        display: block;
+        height: $rgw / 2;
+        clear: both;
+    }
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        @include grid-unit($i);
+    }
+}

@@ -1,0 +1,32 @@
+@import url("framework.css");
+
+.top {
+    background-color: red;
+}
+
+.next {
+    background-color: green;
+}
+
+.col-1 {
+    height: 200px; 
+    background: pink;
+}
+
+.col-2 {
+    background: lightcoral;
+}
+
+.col-3 {
+    height: 200px; 
+    background: yellow;
+}
+
+.col-4 {
+    height: 200px;
+    background: khaki;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
